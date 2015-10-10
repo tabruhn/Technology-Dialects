@@ -1,19 +1,43 @@
  [
-  meteor: {
-  id: _,
-  name: 'Meteor',
-  short: 'Reactive Javascript'
-  long: 'Meteor JS is a reactive javascript framework that incorporates in-memory Mongo DB.'
-  twitter: '@meteorJS',
-  homepage: 'http://www.meteor.com',
-  type: 'framework',
-  tags: [
-    'javascript',
-    'mongodb',
+   {
+  "id": "1",
+  "name": "Meteor",
+  "short": "Reactive Javascript"
+  "long": "Meteor JS is a reactive javascript framework that incorporates in-memory Mongo DB."
+  "twitter": "@meteorJS",
+  "homepage": "http://www.meteor.com",
+  "type": "framework",
+  "tags": [
+    "javascript",
+    "mongodb",
   ],
   related: [
-    'Angular'
+    "Angular",
+    "React"
+  ]
+},
+  {
+    "_id": "2",
+    "name": "Angular",
+    "short": "MVC front-end framework from Google",
+    "long": "HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.",
+    "twitter": "@angularJS",
+    "homepage": "https://angularjs.org/",
+    "type": "MVC Framework",
+    "tags": [
+      "javascript",
+      "MEAN",
+      "MVC"
+    ],
+    related: [
+      "Meteor",
+      "React"
+    ]
+}
   ]
 
-  }
+},
+{
+
+}
 ]
