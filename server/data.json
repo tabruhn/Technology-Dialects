@@ -1,0 +1,19 @@
+ [
+  meteor: {
+  id: _,
+  name: 'Meteor',
+  short: 'Reactive Javascript'
+  long: 'Meteor JS is a reactive javascript framework that incorporates in-memory Mongo DB.'
+  twitter: '@meteorJS',
+  homepage: 'http://www.meteor.com',
+  type: 'framework',
+  tags: [
+    'javascript',
+    'mongodb',
+  ],
+  related: [
+    'Angular'
+  ]
+
+  }
+]
