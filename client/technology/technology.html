@@ -1,5 +1,9 @@
 <template name="technology">
 	<p>Hello!</p>
 	<p>{{getQueryParam}}</p>
-		<p>{{getglassdoor.states.countReturned}}</p>
+
+			{{#each getglassdoor.cities}}
+			<p>{{numJobs}}</p>
+			{{/each}}
+
 </template>
