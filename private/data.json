@@ -31,47 +31,5 @@
       "Meteor",
       "React"
     ]
-},
-{
-  "name": "Knockout",
-  "short": "",
-  "long": "",
-  "twitter": "@knockoutjs",
-  "homepage": "http://knockoutjs.com",
-  "type": "MV Framework",
-  "tags": [
-    "javascript"
-  ],
-  "related": [
-    "React"
-  ]
-},
-{
-  "name": "Ember",
-  "short": "",
-  "long": "",
-  "twitter": "@emberjs",
-  "homepage": "http://emberjs.com",
-  "type": "MV Framework",
-  "tags": [
-    "javascript"
-  ],
-  "related": [
-    "Angular"
-  ]
-},
-{
-  "name": "Backbone",
-  "short": "",
-  "long": "",
-  "twitter": "@backbonejs",
-  "homepage": "http://backbonejs.com",
-  "type": "MV Framework",
-  "tags": [
-    "javascript"
-  ],
-  "related": [
-    "Ember"
-  ]
 }
 ]
