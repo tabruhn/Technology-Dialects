@@ -1,5 +1,17 @@
 <template name="home">
 
-  {{>items}}
+  <section class="middle-hero">
+{{#masonryContainer columnWidth=300 gutter=5 rowheight=340 transitionDuration="0.2s" id="MasonryContainer" }}
+        {{#each techs}}
+        {{#masonryElement "MasonryContainer"}}
+        <div class="item">
+        <h5>{{name}}</h5>
+        <p class="description">{{short}}</p>
+        <div class="tags-card"><div class="circle"><p>524</p></div></div>
+        </div>
+        {{/masonryElement}}
+        {{/each}}
+        {{/masonryContainer}}
+  </section>
 
 </template>
