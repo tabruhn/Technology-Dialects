@@ -1,14 +1,18 @@
-<head>
-  <title>Technology-Dialects</title>
-</head>
-
-<body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
-</body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="home">
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="input-field col s3">
+          I want to know about
+          <input id="tech" class="validate" type="text" placeholder="javascript" />
+          <label for="tech"> Technology </label>
+        </div>
+        <div class="input-field col s3">
+          in
+          <input id="location" class="validate" type="text" placeholder="Seattle" />
+          <label for="location"> location </label>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
