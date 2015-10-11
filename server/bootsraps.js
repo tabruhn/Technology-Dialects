@@ -1,6 +1,4 @@
-if (Meteor.isServer) {
-
-  Meteor.startup(function() {
+Meteor.startup(function() {
 
 function fill(col, source, map) {
   col.remove({});
@@ -12,7 +10,4 @@ function fill(col, source, map) {
 
 fill(Techs, 'data.json');
 
-  });
-
-
-}
+});
