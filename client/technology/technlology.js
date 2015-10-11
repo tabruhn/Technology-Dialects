@@ -7,8 +7,12 @@ Template.technology.helpers({
 		console.log(glassdoorresults);
 		return glassdoorresults;
 	},
-	getQueryParam: function() {
+	getTechnology: function() {
 		console.log(Router.current().params.technology);
 		return Router.current().params.technology;
-	}
+	},
+	getLocation: function() {
+		console.log(Router.current().params.location);
+		return Router.current().params.location;
+	},
 });

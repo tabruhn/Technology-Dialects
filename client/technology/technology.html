@@ -1,9 +1,18 @@
 <template name="technology">
-	<p>Hello!</p>
-	<p>{{getQueryParam}}</p>
-
+	<section class="top-hero">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+	<h1>{{getLocation}}: {{getTechnology}}</h1>
+</div>
+</div>
+<div class="row">
+	<div class="col-md-5">
 			{{#each getglassdoor.cities}}
-			<p>{{numJobs}}</p>
+			<p><span class="description">Number of Jobs:</span>{{numJobs}}</p>
 			{{/each}}
-
+		</div>
+		</div>
+	</div>
+</section>
 </template>
