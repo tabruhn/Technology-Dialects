@@ -8,7 +8,7 @@
   "type": "framework",
   "tags": [
     "javascript",
-    "mongodb",
+    "mongodb"
   ],
   "related": [
     "Angular",
@@ -32,3 +32,4 @@
       "React"
     ]
 }
+]
