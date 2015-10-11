@@ -5,3 +5,10 @@ techs: function() {
   return techsObj;
 }
 });
+
+Template.home.events({
+
+"click .item": function() {
+  Router.go('technology', {technology: this.name});
+}
+});
