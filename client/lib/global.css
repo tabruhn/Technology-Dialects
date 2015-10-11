@@ -1,0 +1,12 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans|Roboto|Slabo+27px|Montserrat:400,700|Lora:400,700,400italic,700italic);
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans';
+}
