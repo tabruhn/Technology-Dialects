@@ -1,26 +1,13 @@
 <template name="index">
   <section class="low-hero">
-  <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <form class="form-inline">
-        <div class="col-sm-6">
-
-          I want to know about
-          <input id="tech" class="validate form-control" type="text" placeholder="javascript">
-          <label for="tech" class="sr-only"> Technology </label>
-        </div>
-        <div class="col-sm-6">
-          in
-          <input id="location" class="validate form-control" type="text" placeholder="Seattle" >
-          <label for="location" class="sr-only"> location </label>
-      </div>
-      </form>
+    <div class="container">
+      {{>filter}}
     </div>
-    </div>
-  </div>
   </section>
-    <section class="low-hero">
+  <section class="low-hero">
+    <div class="section">
       {{>home}}
+    </div>
   </section>
+
 </template>

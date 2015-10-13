@@ -1,5 +1,5 @@
 Meteor.methods({
-	glassdoor: function (technology, location){
+	glassdoor: function (location, technology){
 		console.log(location);
 		console.log(technology);
 		this.unblock();
@@ -15,7 +15,7 @@ Meteor.methods({
 		}
 	},
 
-	meetup: function (location, technology){
+	meetup: function (technology, city, state){
 		// meetup api login: meteor@mail.bentrask.com, pw: atmosphere
 		var technologies = {
 			"reactjs" : {
@@ -39,7 +39,6 @@ Meteor.methods({
 				"members": 	41343
 			}
 		};
-		console.log(location);
 		console.log(technology);
 		this.unblock();
 		try {

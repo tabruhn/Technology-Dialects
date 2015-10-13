@@ -1,17 +1,18 @@
-Template.technology.helpers({
+Template.detail.helpers({
 	getglassdoor: function(){
-		var locationParam = Router.current().params.location || "seattle";
 		var technologyParam = Router.current().params.technology || "javascript";
+		var locationParam = Router.current().params.city || "seattle";
 		console.log(locationParam);
 		var glassdoorresults= ReactiveMethod.call("glassdoor", locationParam, technologyParam);
 		console.log(glassdoorresults);
 		return glassdoorresults;
 	},
 	getMeetups: function(){
-		var locationParam =  "seattle, wa";  //TODO need to reconcile with getglassdoor to accept loc as Seattle,WA  May need to add a third param for state.
+		var cityParam =  Router.current().params.city;
+		var stateParam =  Router.current().params.state;
 		var technologyParam = Router.current().params.technology || "javascript";
-		console.log(locationParam);
-		var meetupresults= ReactiveMethod.call("meetup", locationParam, technologyParam);
+		console.log(technologyParam);
+		var meetupresults= ReactiveMethod.call("meetup", cityParam, stateParam, technologyParam);
 		console.log(meetupresults);
 		return meetupresults;
 	},
@@ -19,8 +20,12 @@ Template.technology.helpers({
 		console.log(Router.current().params.technology);
 		return Router.current().params.technology;
 	},
-	getLocation: function() {
-		console.log(Router.current().params.location);
-		return Router.current().params.location;
+	getCity: function() {
+		console.log(Router.current().params.city);
+		return Router.current().params.city;
+	},
+	getState: function() {
+		console.log(Router.current().params.state);
+		return Router.current().params.state;
 	},
 });

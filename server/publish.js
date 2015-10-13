@@ -3,3 +3,9 @@ Meteor.publish('theTechs', function() {
 
   return Techs.find();
 });
+
+Meteor.publish('theLocs', function() {
+  //check(listId, String);
+
+  return Locs.find();
+});
