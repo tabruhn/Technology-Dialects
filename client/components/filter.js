@@ -34,7 +34,7 @@ Template.filter.events({
   var technology = event.target.technology.value;
   var location = [];
   location = event.target.location.value.split(',').map(function(loc) { return loc.trim(); });
-  Router.go('/detail/:technology/:city/:state', {technology: technology, city: location[0], state:location[1]});
+  Router.go('detail.show', {technology: technology, city: location[0], state:location[1]});
 
 }
 
