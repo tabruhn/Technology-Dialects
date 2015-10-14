@@ -72,5 +72,21 @@ Meteor.methods({
 			console.log(error);
 			return error;
 		}
+	},
+
+	stackoverflow: function(technology) {
+		this.unblock();
+		console.log(technology);
+		try {
+			var url = "https://api.stackexchange.com/2.2/questions?order=desc&sort=activity&tagged=" + technology + "&site=stackoverflow";
+			var result = Meteor.http.get(url);
+			var decompressedResult = inflateSync(result);
+			return decompressedResult;
+		}
+		catch(error) {
+			console.log(error);
+			return error;
+		}
+
 	}
 });

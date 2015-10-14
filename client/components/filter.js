@@ -18,7 +18,7 @@ Template.filter.helpers({
       rules:[
         {
           collection: Locs,
-          field: "locs",
+          field: "loc",
           matchAll: true,
           template: Template.dataLocs
         }
